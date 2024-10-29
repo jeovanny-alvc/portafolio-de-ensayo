@@ -1,0 +1,361 @@
+/* Reset de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General */
+body {
+    font-family: "Raleway", sans-serif;
+    background-color: #f5f5f5;
+    width: 100vw;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.contenedor {
+    padding: 16px 5vw;
+}
+
+/* Cabecera */
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecera__logo {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.cabecera__imagen {
+    margin-right: 10px;
+    height: 40px;
+}
+
+.cabecera__menu ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.menu__item {
+    font-weight: 300;
+}
+
+.menu__item a:hover {
+    font-weight: 500;
+}
+
+/* Sección Descripción */
+.descripcion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.descripcion__contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 60%;
+}
+
+.descripcion__titulo {
+    font-size: 52px;
+    font-weight: 700;
+}
+
+.descripcion__texto {
+    font-size: 22px;
+}
+
+.descripcion__links {
+    display: flex;
+    gap: 20px;
+}
+
+.descripcion__imagen img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Sección Sobre Mí */
+.sobre-mi {
+    padding: 2rem;
+    
+    text-align: center;
+    margin-top: 40px;
+}
+
+.sobre-mi__titulo {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.sobre-mi__texto {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.sobre-mi__firma {
+    max-width: 150px;
+    margin-top: 1.5rem;
+    background-color: #f5f5f5; /* Fondo de la firma ajustado */
+}
+
+.habilidades {
+    padding: 2rem;
+    background-color: #fff;
+    text-align: center;
+    
+}
+
+.habilidades__titulo {
+    font-size: 1.8rem;
+    color: var(--color-principal);
+}
+
+.habilidades__lista {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.habilidades__elemento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* seccion de aficiones */
+.aficiones {
+    padding: 2rem;
+    background-color: var(--color-de-fondo);
+    text-align: center;
+}
+
+.aficiones__titulo {
+    font-size: 1.8rem;
+    color: var(--color-principal);
+}
+
+.aficiones__lista {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.aficiones__elemento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aficiones__icono {
+    max-width: 60px;
+    margin-bottom: 0.5rem;
+}
+
+.aficiones__nombre {
+    font-size: 1rem;
+}
+
+/* ------------------------------ Sección Formación -------------------------- */
+.formacion {
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.formacion__titulo {
+    font-size: 1.8rem;
+    color: var(--color-principal);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.formacion__lista {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.formacion__elemento {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.formacion__icono {
+    max-width: 60px;
+}
+
+.formacion__nombre {
+    font-size: 1.2rem;
+    color: var(--color-principal);
+}
+
+.formacion__detalle {
+    font-size: 1rem;
+    color: var(--color-secundario);
+}
+
+/* ------------------------------ Sección Proyectos -------------------------- */
+.proyectos {
+    padding: 2rem;
+    background-color: var(--color-de-fondo);
+}
+
+.proyectos__titulo {
+    font-size: 1.8rem;
+    color: var(--color-principal);
+    text-align: center;
+}
+
+.proyectos__contenedor {
+    margin-bottom: 1.5rem;
+}
+
+.proyectos__nombre {
+    font-size: 1.5rem;
+    color: var(--color-secundario);
+}
+
+.proyectos__descripcion {
+    font-size: 1.1rem;
+}
+
+/* ------------------------------ Sección Contacto --------------------------- */
+.contacto {
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.contacto__titulo {
+    font-size: 1.8rem;
+    color: var(--color-principal);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contacto__formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contacto__campo {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contacto__campo--textarea {
+    height: 150px;
+}
+
+.contacto__boton {
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    background-color: var(--color-boton);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contacto__boton:hover {
+    background-color: var(--color-boton-hover);
+}
+
+/* ------------------------------ Responsividad ------------------------------ */
+@media (min-width: 768px) {
+    .cabecera {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cabecera__logo {
+        max-width: 100px;
+    }
+
+    .cabecera__titulo {
+        font-size: 1.5rem;
+    }
+
+    .navegacion__lista {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1rem;
+    }
+
+    .presentacion {
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .presentacion__foto {
+        max-width: 200px;
+    }
+
+    .habilidades__lista, .aficiones__lista {
+        justify-content: space-around;
+    }
+}
+/* Pie de página */
+.pie {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 40px;
+}
+
+.pie p {
+    font-size: 0.9rem;
+}
+
+@media (min-width: 1024px) {
+    .cabecera__titulo {
+        font-size: 1.8rem;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1.1rem;
+    }
+
+    .presentacion__titulo {
+        font-size: 2.2rem;
+    }
+
+    .habilidades__titulo, .aficiones__titulo, .formacion__titulo, .proyectos__titulo, .contacto__titulo {
+        font-size: 2.2rem;
+    }
+}
